@@ -1,0 +1,5 @@
+{
+  "name": "Smart Multi-Widget",
+  "description": "A beautiful, responsive React widget featuring a real-time clock, date display, and weather information, with manual city selection.",
+  "requestFramePermissions": []
+}
