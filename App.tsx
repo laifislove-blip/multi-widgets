@@ -97,9 +97,10 @@ const App: React.FC = () => {
   }, [fetchWeatherByCity]);
 
   return (
-    <div className="w-screen h-screen flex items-center justify-center p-4 bg-white">
-      <div className="relative group">
-        <div className={`absolute -inset-2 bg-gradient-to-r ${loadingWeather ? 'from-gray-200 to-gray-100' : 'from-blue-200 to-cyan-100'} rounded-[15vmin] blur-2xl opacity-30 transition duration-1000`}></div>
+    // 배경을 transparent로 변경하고, 외부 그림자/Glow를 제거했습니다.
+    <div className="w-screen h-screen flex items-center justify-center p-2 bg-transparent">
+      <div className="relative">
+        {/* 노션 임베드시 지저분해 보일 수 있는 외부 Glow 효과를 주석 처리/제거했습니다. */}
         <SmartWidget 
           time={widgetData.time}
           day={widgetData.day}
